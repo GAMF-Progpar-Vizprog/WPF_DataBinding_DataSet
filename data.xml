@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes"?>
+<dsStudents xmlns="http://tempuri.org/dsStudents.xsd">
+  <xs:schema id="dsStudents" targetNamespace="http://tempuri.org/dsStudents.xsd" xmlns:mstns="http://tempuri.org/dsStudents.xsd" xmlns="http://tempuri.org/dsStudents.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="dsStudents" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="dtStudents">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="LastName" type="xs:string" minOccurs="0" />
+                <xs:element name="FirstName" type="xs:string" minOccurs="0" />
+                <xs:element name="Neptun" type="xs:string" />
+                <xs:element name="OverallAverage" type="xs:double" minOccurs="0" />
+                <xs:element name="email" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="dtStudentsKey1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:dtStudents" />
+        <xs:field xpath="mstns:Neptun" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <dtStudents>
+    <LastName>Okoska</LastName>
+    <FirstName>Törp</FirstName>
+    <Neptun>DERTFBH.KEFO</Neptun>
+    <OverallAverage>3.5</OverallAverage>
+    <email>ot@net.hu</email>
+  </dtStudents>
+  <dtStudents>
+    <LastName>Duli</LastName>
+    <FirstName>Fuli</FirstName>
+    <Neptun>DUFTRPH.KEFO</Neptun>
+    <OverallAverage>4.2</OverallAverage>
+    <email>df@net.hu</email>
+  </dtStudents>
+  <dtStudents>
+    <LastName>Papa</LastName>
+    <FirstName>Törp</FirstName>
+    <Neptun>PAPTFBH.KEFO</Neptun>
+    <OverallAverage>4.9</OverallAverage>
+    <email>pt@net.hu</email>
+  </dtStudents>
+</dsStudents>
