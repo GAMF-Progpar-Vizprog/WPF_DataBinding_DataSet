@@ -61,8 +61,9 @@ namespace WPF_DataBinding_DataSet
 		private void UserControl_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
 		{
 			if(!IsVisible) return;
-			ds = Application.Current.Properties["ds"] as dsStudents;
-			if (ds == null) return;
+			if(Application.Current.Properties["ds"] is not dsStudents ds) return;
+			//ds = Application.Current.Properties["ds"] as dsStudents;
+			//if (ds==null) return
 			grGrid.DataContext = ds.dtStudents;
 		}
 	}
